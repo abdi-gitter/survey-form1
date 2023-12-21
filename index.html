@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey-form.css">
+    
+</head>
+<body>
+    <!-- header section -->
+    <div class="header">
+        <h1><span class="netflix-net">NET</span><span class="netflix-flix">FLIX</span></h1>
+        <p>Thank you for signing up to Netflix. Tell us more about yourself!</p>
+    </div>
+    
+                                 <!-- Survey Form -->
+    <div class="form-container">
+        
+        <form action="https://clarusway.com" method="post">
+                            
+            <!--Form Fields -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="enter your name "><br><br>
+            <label for="age" >Age:</label>
+            <input type="text" id="age" name="age" placeholder="age" name><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="email"><br><br>
+
+                            <!--Content Type Selection -->
+            <label for="content-type">Content Type:</label>
+            <select id="content-type" name="content-type">
+                <option value="series">Series</option>
+                <option value="movies">Movies</option>
+            </select><br><br>
+              
+            <fieldset>
+                <legend>Movie Type:</legend>
+                <label><input type="checkbox" name="movie-type" value="movie-type"> Comedy</label>
+                <label><input type="checkbox" name="movie-type" value="movie-type"> Action</label>
+                <label><input type="checkbox" name="movie-type" value="movie-type"> Romance</label>
+                <label><input type="checkbox" name="movie-type" value="movie-type"> Cartoon</label>
+            </fieldset><br>  
+            <fieldset>
+                <legend>Gender:</legend>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+              </fieldset><br>    
+                
+                <!-- Feedback Textarea -->
+                <label for="feedback">Feedback:</label><br>
+                <textarea id="feedback" name="feedback" placeholder="any comments..."></textarea> <br> 
+                                       
+                <!-- Submit Button -->
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    
+</body>
+</html>
